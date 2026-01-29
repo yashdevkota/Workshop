@@ -20,6 +20,7 @@ print("\n--- Data Summary Info (Info) ---")
 df.info()
 
 # 4. Check descriptive statistics for numerical data (mean, std, quartiles, etc.)
+pd.options.display.float_format = '{:,.0f}'.format
 print("\n--- Descriptive Statistics (Describe) ---")
 print(df.describe())
 
